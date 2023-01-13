@@ -4,8 +4,8 @@ $(document).ready(function () {
       const message = $('#chatbot-input').val();
       $.ajax({
         type: 'POST',
-        url: 'http://localhost:3000/chatbot',
-        // url: 'https://nabil828-comp4537-w23-labs-lab2.onrender.com/chatbot',
+       // url: 'http://localhost:3000/chatbot',
+        url: 'https://gpt-4-chatbot-43j5.onrender.com/chatbot',
         data: { message: message },
         success: function (response) {
           let newMessage = $('<div>', { class: 'message' }).text(response.text);
